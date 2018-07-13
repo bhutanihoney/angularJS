@@ -8,6 +8,7 @@ import { SidebarComponent } from './sidebar/sidebar.component';
 import { ContactComponent } from './contact/contact.component';
 import { LandingPageComponent } from './landing-page/landing-page.component';
 import { routing } from './app.routing';
+import { FormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -17,12 +18,15 @@ import { routing } from './app.routing';
     FooterComponent,
     SidebarComponent,
     ContactComponent,
-    LandingPageComponent
+    LandingPageComponent    
   ],
+
   imports: [
     BrowserModule,
-    routing
+    routing,
+    FormsModule
   ],
+  
   providers: [],
   bootstrap: [AppComponent]
 })
